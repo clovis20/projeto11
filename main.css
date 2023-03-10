@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(36, 22, 158);
+    color: whitesmoke;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+header nav li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container, .produtos {
+    max-width: 1023px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: blue;
+}
+
+section .text p {
+    border-top: 2px solid blue;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+section img {
+    margin-right: 32px;
+}
+
+.nProduto {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.dProduto {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+section button {
+    font-size: 12px;
+    background-color: rgb(36, 22, 158);
+    color: whitesmoke;
+    border-radius: 6px;
+    border-style: none;
+    width: 90%;
+    height: 32px;
+    margin-bottom: 12px;
+    cursor: pointer
+}
+
+#borda {
+    border-top: 2px solid blue;
+}
+
+@media screen and (max-width: 650px){
+    img{
+        max-width: 100%;
+    }
+    header .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 95%;
+    } 
+    section .container{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 95%;
+    }
+    section .produtos{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 95%;
+    }
+    section .container{
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1024px){
+    section .container .produto .nProduto{
+        font-weight:bolder;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    section .container .produto .dProduto{
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+    section .container .produto button{
+        font-size: 18px;
+        color: white;
+        background-color: blue;
+        border-radius: 5px;
+        border-style: none;
+        width: 90%;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    section .container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    section .container{
+        max-width: 990px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
